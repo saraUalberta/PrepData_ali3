@@ -1,0 +1,3477 @@
+Sun Dec 31 02:03:28 UTC 2017
+/usr/local/freesurfer/subjects/3123
+/usr/local/freesurfer/bin/recon-all
+-all -i sMRI/3123.nii -subjid 3123 -sd /usr/local/freesurfer/subjects
+subjid 3123
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+FREESURFER_HOME /usr/local/freesurfer
+Actual FREESURFER_HOME /usr/local/freesurfer
+build-stamp.txt: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0-2beb96c
+Linux ali-3 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    8192 kbytes
+coredumpsize 0 kbytes
+memoryuse    unlimited
+vmemoryuse   unlimited
+descriptors  1024 
+memorylocked 64 kbytes
+maxproc      63798 
+maxlocks     unlimited
+maxsignal    63798 
+maxmessage   819200 
+maxnice      0 
+maxrtprio    0 
+maxrttime    unlimited
+
+             total       used       free     shared    buffers     cached
+Mem:       8176220    6872036    1304184         32      71508    5796600
+-/+ buffers/cache:    1003928    7172292
+Swap:      4194300       7116    4187184
+
+########################################
+program versions used
+$Id: recon-all,v 1.580.2.16 2017/01/18 14:11:24 zkaufman Exp $
+$Id: mri_motion_correct.fsl,v 1.15 2016/02/16 17:17:20 zkaufman Exp $
+mri_convert.bin -all-info 
+ProgramName: mri_convert.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+FLIRT version 5.5
+$Id: talairach_avi,v 1.13 2015/12/23 04:25:17 greve Exp $
+mri_convert.bin --version 
+stable6
+ProgramName: tkregister2_cmdl  ProgramArguments: --all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: tkregister2.c,v 1.132.2.1 2016/08/02 21:17:29 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+ProgramName: mri_make_uchar  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_make_uchar.c,v 1.4 2011/03/02 00:04:14 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_normalize.c,v 1.88.2.3 2016/12/27 16:47:13 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_watershed  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_watershed.cpp,v 1.103 2016/06/17 18:00:49 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_gcut  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_gcut.cpp,v 1.14 2011/03/02 00:04:16 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segment  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_segment.c,v 1.43.2.1 2016/10/27 22:24:52 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_label2label.bin  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_label2label.c,v 1.48.2.2 2016/12/12 14:15:26 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_em_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_em_register.c,v 1.105.2.1 2016/10/27 22:25:10 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_ca_normalize.c,v 1.67.2.2 2016/10/27 22:25:09 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_ca_register.c,v 1.96.2.3 2016/10/27 22:25:10 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_ca_label.c,v 1.113.2.2 2016/10/27 22:25:10 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_pretess  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_pretess.c,v 1.22 2013/08/30 18:12:25 mreuter Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fill  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_fill.c,v 1.119 2011/10/25 14:09:58 fischl Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_tessellate  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_tessellate.c,v 1.38.2.1 2016/07/26 18:46:38 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_concatenate_lta.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_concatenate_lta.c,v 1.16 2015/11/21 00:06:20 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize_tp2  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_normalize_tp2.c,v 1.8 2011/03/02 00:04:23 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_smooth  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_smooth.c,v 1.30 2014/01/21 18:48:21 fischl Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_inflate  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_inflate.c,v 1.45 2016/01/20 23:42:15 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_curvature.c,v 1.31 2011/03/02 00:04:30 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_sphere  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_fix_topology  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_fix_topology.c,v 1.50.2.1 2016/10/27 22:25:58 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_topo_fixer  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_topo_fixer.cpp,v 1.29 2011/03/02 00:04:34 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_euler_number  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_euler_number.c,v 1.10 2013/01/14 22:39:14 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_make_surfaces  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_register  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_register.c,v 1.63 2016/01/20 23:43:04 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_volmask  ProgramArguments: --all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_volmask.cpp,v 1.26.2.2 2016/11/18 20:05:18 zkaufman Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_anatomical_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_anatomical_stats.c,v 1.79 2016/03/14 15:15:34 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mrisp_paint  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mrisp_paint.c,v 1.12 2016/03/22 14:47:57 fischl Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_curvature_stats.c,v 1.65 2015/06/04 20:50:51 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_calc  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:28-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mris_calc.c,v 1.54.2.1 2016/09/27 18:51:28 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $
+
+ProgramName: mri_robust_register.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:29-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $
+
+ProgramName: mri_robust_template  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:29-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_and  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:29-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_and.c,v 1.4 2011/03/02 00:04:13 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_or  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:29-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_or.c,v 1.5 2013/03/20 15:03:29 lzollei Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fuse_segmentations  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:29-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_fuse_segmentations.c,v 1.8 2011/03/02 00:04:15 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segstats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:29-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_relabel_hypointensities  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/12/31-02:03:29-GMT  BuildTimeStamp: Jan 18 2017 16:38:58  CVS: $Id: mri_relabel_hypointensities.c,v 1.13 2015/05/15 18:44:10 nicks Exp $  User: ubuntu  Machine: ali-3  Platform: Linux  PlatformVersion: 3.13.0-121-generic  CompilerName: GCC  CompilerVersion: 40400 
+#######################################
+GCADIR /usr/local/freesurfer/average
+GCA RB_all_2016-05-10.vc700.gca
+GCASkull RB_all_withskull_2016-05-10.vc700.gca
+AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
+GCSDIR /usr/local/freesurfer/average
+GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
+#######################################
+/usr/local/freesurfer/subjects/3123
+
+ mri_convert /home/ubuntu/sMRI/3123.nii /usr/local/freesurfer/subjects/3123/mri/orig/001.mgz 
+
+mri_convert.bin /home/ubuntu/sMRI/3123.nii /usr/local/freesurfer/subjects/3123/mri/orig/001.mgz 
+INFO: using NIfTI-1 qform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /home/ubuntu/sMRI/3123.nii...
+INFO: this is an unsiged short. I'll try to read it, but
+      it might not work if there are values over 32k
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /usr/local/freesurfer/subjects/3123/mri/orig/001.mgz...
+#--------------------------------------------
+#@# MotionCor Sun Dec 31 02:03:36 UTC 2017
+Found 1 runs
+/usr/local/freesurfer/subjects/3123/mri/orig/001.mgz
+Checking for (invalid) multi-frame inputs...
+WARNING: only one run found. This is OK, but motion
+correction cannot be performed on one run, so I'll
+copy the run to rawavg and continue.
+
+ cp /usr/local/freesurfer/subjects/3123/mri/orig/001.mgz /usr/local/freesurfer/subjects/3123/mri/rawavg.mgz 
+
+/usr/local/freesurfer/subjects/3123
+
+ mri_convert /usr/local/freesurfer/subjects/3123/mri/rawavg.mgz /usr/local/freesurfer/subjects/3123/mri/orig.mgz --conform 
+
+mri_convert.bin /usr/local/freesurfer/subjects/3123/mri/rawavg.mgz /usr/local/freesurfer/subjects/3123/mri/orig.mgz --conform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /usr/local/freesurfer/subjects/3123/mri/rawavg.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+changing data type from short to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+Reslicing using trilinear interpolation 
+writing to /usr/local/freesurfer/subjects/3123/mri/orig.mgz...
+
+ mri_add_xform_to_header -c /usr/local/freesurfer/subjects/3123/mri/transforms/talairach.xfm /usr/local/freesurfer/subjects/3123/mri/orig.mgz /usr/local/freesurfer/subjects/3123/mri/orig.mgz 
+
+INFO: extension is mgz
+#--------------------------------------------
+#@# Talairach Sun Dec 31 02:04:01 UTC 2017
+/usr/local/freesurfer/subjects/3123/mri
+
+ mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50 
+
+/usr/local/freesurfer/subjects/3123/mri
+/usr/local/freesurfer/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50
+nIters 1
+$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
+Linux ali-3 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Sun Dec 31 02:04:01 UTC 2017
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+/usr/bin/bc
+tmpdir is ./tmp.mri_nu_correct.mni.1066
+/usr/local/freesurfer/subjects/3123/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.1066/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.1066/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.1066/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Sun Dec 31 02:04:08 UTC 2017
+nu_correct -clobber ./tmp.mri_nu_correct.mni.1066/nu0.mnc ./tmp.mri_nu_correct.mni.1066/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.1066/0/ -iterations 1000 -distance 50
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+[ubuntu@ali-3:/usr/local/freesurfer/subjects/3123/mri/] [2017-12-31 02:04:08] running:
+  /usr/local/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 1000 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 50 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.1066/0/ ./tmp.mri_nu_correct.mni.1066/nu0.mnc ./tmp.mri_nu_correct.mni.1066/nu1.imp
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+Number of iterations: 49 
+CV of field change: 0.000968343
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ 
+ 
+ 
+mri_convert ./tmp.mri_nu_correct.mni.1066/nu1.mnc orig_nu.mgz --like orig.mgz --conform
+mri_convert.bin ./tmp.mri_nu_correct.mni.1066/nu1.mnc orig_nu.mgz --like orig.mgz --conform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.1066/nu1.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+writing to orig_nu.mgz...
+ 
+ 
+Sun Dec 31 02:07:25 UTC 2017
+mri_nu_correct.mni done
+
+ talairach_avi --i orig_nu.mgz --xfm transforms/talairach.auto.xfm 
+
+talairach_avi log file is transforms/talairach_avi.log...
+Started at Sun Dec 31 02:07:25 UTC 2017
+Ended   at Sun Dec 31 02:08:41 UTC 2017
+talairach_avi done
+
+ cp transforms/talairach.auto.xfm transforms/talairach.xfm 
+
+#--------------------------------------------
+#@# Talairach Failure Detection Sun Dec 31 02:08:43 UTC 2017
+/usr/local/freesurfer/subjects/3123/mri
+
+ talairach_afd -T 0.005 -xfm transforms/talairach.xfm 
+
+talairach_afd: Talairach Transform: transforms/talairach.xfm OK (p=0.3635, pval=0.0406 >= threshold=0.0050)
+
+ awk -f /usr/local/freesurfer/bin/extract_talairach_avi_QA.awk /usr/local/freesurfer/subjects/3123/mri/transforms/talairach_avi.log 
+
+
+ tal_QC_AZS /usr/local/freesurfer/subjects/3123/mri/transforms/talairach_avi.log 
+
+TalAviQA: 0.97656
+z-score: 0
+#--------------------------------------------
+#@# Nu Intensity Correction Sun Dec 31 02:08:44 UTC 2017
+
+ mri_nu_correct.mni --i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2 
+
+/usr/local/freesurfer/subjects/3123/mri
+/usr/local/freesurfer/bin/mri_nu_correct.mni
+--i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2
+nIters 2
+$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
+Linux ali-3 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Sun Dec 31 02:08:44 UTC 2017
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
+/usr/bin/bc
+tmpdir is ./tmp.mri_nu_correct.mni.8400
+/usr/local/freesurfer/subjects/3123/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.8400/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.8400/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.8400/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Sun Dec 31 02:08:51 UTC 2017
+nu_correct -clobber ./tmp.mri_nu_correct.mni.8400/nu0.mnc ./tmp.mri_nu_correct.mni.8400/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.8400/0/
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+[ubuntu@ali-3:/usr/local/freesurfer/subjects/3123/mri/] [2017-12-31 02:08:51] running:
+  /usr/local/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.8400/0/ ./tmp.mri_nu_correct.mni.8400/nu0.mnc ./tmp.mri_nu_correct.mni.8400/nu1.imp
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+Number of iterations: 45 
+CV of field change: 0.000986001
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ 
+ 
+--------------------------------------------------------
+Iteration 2 Sun Dec 31 02:11:06 UTC 2017
+nu_correct -clobber ./tmp.mri_nu_correct.mni.8400/nu1.mnc ./tmp.mri_nu_correct.mni.8400/nu2.mnc -tmpdir ./tmp.mri_nu_correct.mni.8400/1/
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+[ubuntu@ali-3:/usr/local/freesurfer/subjects/3123/mri/] [2017-12-31 02:11:06] running:
+  /usr/local/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.8400/1/ ./tmp.mri_nu_correct.mni.8400/nu1.mnc ./tmp.mri_nu_correct.mni.8400/nu2.imp
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Processing:.................................................................Done
+Number of iterations: 22 
+CV of field change: 0.000977247
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "en_CA.UTF-8",
+	LC_MONETARY = "en_CA.UTF-8",
+	LC_ADDRESS = "en_CA.UTF-8",
+	LC_TELEPHONE = "en_CA.UTF-8",
+	LC_NAME = "en_CA.UTF-8",
+	LC_MEASUREMENT = "en_CA.UTF-8",
+	LC_IDENTIFICATION = "en_CA.UTF-8",
+	LC_NUMERIC = "en_CA.UTF-8",
+	LC_PAPER = "en_CA.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ 
+ 
+ 
+mri_binarize --i ./tmp.mri_nu_correct.mni.8400/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.8400/ones.mgz
+
+$Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
+cwd /usr/local/freesurfer/subjects/3123/mri
+cmdline mri_binarize.bin --i ./tmp.mri_nu_correct.mni.8400/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.8400/ones.mgz 
+sysname  Linux
+hostname ali-3
+machine  x86_64
+user     ubuntu
+
+input      ./tmp.mri_nu_correct.mni.8400/nu2.mnc
+frame      0
+nErode3d   0
+nErode2d   0
+output     ./tmp.mri_nu_correct.mni.8400/ones.mgz
+Binarizing based on threshold
+min        -1
+max        +infinity
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Found 16777216 values in range
+Counting number of voxels in first frame
+Found 16777216 voxels in final mask
+Count: 16777216 16777216.000000 16777216 100.000000
+mri_binarize done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.8400/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.8400/sum.junk --avgwf ./tmp.mri_nu_correct.mni.8400/input.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.8400/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.8400/sum.junk --avgwf ./tmp.mri_nu_correct.mni.8400/input.mean.dat 
+sysname  Linux
+hostname ali-3
+machine  x86_64
+user     ubuntu
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.8400/ones.mgz
+Loading orig.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.8400/input.mean.dat
+mri_segstats done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.8400/ones.mgz --i ./tmp.mri_nu_correct.mni.8400/nu2.mnc --sum ./tmp.mri_nu_correct.mni.8400/sum.junk --avgwf ./tmp.mri_nu_correct.mni.8400/output.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.8400/ones.mgz --i ./tmp.mri_nu_correct.mni.8400/nu2.mnc --sum ./tmp.mri_nu_correct.mni.8400/sum.junk --avgwf ./tmp.mri_nu_correct.mni.8400/output.mean.dat 
+sysname  Linux
+hostname ali-3
+machine  x86_64
+user     ubuntu
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.8400/ones.mgz
+Loading ./tmp.mri_nu_correct.mni.8400/nu2.mnc
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.8400/output.mean.dat
+mri_segstats done
+mris_calc -o ./tmp.mri_nu_correct.mni.8400/nu2.mnc ./tmp.mri_nu_correct.mni.8400/nu2.mnc mul 1.02682891531500531165
+Saving result to './tmp.mri_nu_correct.mni.8400/nu2.mnc' (type = MINC )                       [ ok ]
+mri_convert ./tmp.mri_nu_correct.mni.8400/nu2.mnc nu.mgz --like orig.mgz
+mri_convert.bin ./tmp.mri_nu_correct.mni.8400/nu2.mnc nu.mgz --like orig.mgz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.8400/nu2.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to nu.mgz...
+mri_make_uchar nu.mgz transforms/talairach.xfm nu.mgz
+type change took 0 minutes and 22 seconds.
+mapping ( 8, 122) to ( 3, 110)
+ 
+ 
+Sun Dec 31 02:14:57 UTC 2017
+mri_nu_correct.mni done
+
+ mri_add_xform_to_header -c /usr/local/freesurfer/subjects/3123/mri/transforms/talairach.xfm nu.mgz nu.mgz 
+
+INFO: extension is mgz
+#--------------------------------------------
+#@# Intensity Normalization Sun Dec 31 02:15:01 UTC 2017
+/usr/local/freesurfer/subjects/3123/mri
+
+ mri_normalize -g 1 -mprage nu.mgz T1.mgz 
+
+using max gradient = 1.000
+assuming input volume is MGH (Van der Kouwe) MP-RAGE
+reading from nu.mgz...
+normalizing image...
+talairach transform
+ 1.01152   0.10191   0.12234  -296.71863;
+-0.15110   0.86072   0.40637  -416.41547;
+-0.07845  -0.46215   0.98227  -364.96637;
+ 0.00000   0.00000   0.00000   1.00000;
+processing without aseg, no1d=0
+MRInormInit(): 
+INFO: Modifying talairach volume c_(r,a,s) based on average_305
+MRInormalize(): 
+MRIsplineNormalize(): npeaks = 19
+Starting OpenSpline(): npoints = 19
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+
+Iterating 2 times
+---------------------------------
+3d normalization pass 1 of 2
+white matter peak found at 110
+white matter peak found at 90
+gm peak at 69 (69), valley at 42 (42)
+csf peak at 35, setting threshold to 57
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+---------------------------------
+3d normalization pass 2 of 2
+white matter peak found at 110
+white matter peak found at 90
+gm peak at 67 (67), valley at 39 (39)
+csf peak at 34, setting threshold to 56
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+Done iterating ---------------------------------
+writing output to T1.mgz
+3D bias adjustment took 6 minutes and 19 seconds.
+#--------------------------------------------
+#@# Skull Stripping Sun Dec 31 02:21:23 UTC 2017
+/usr/local/freesurfer/subjects/3123/mri
+
+ mri_em_register -rusage /usr/local/freesurfer/subjects/3123/touch/rusage.mri_em_register.skull.dat -skull nu.mgz /usr/local/freesurfer/average/RB_all_withskull_2016-05-10.vc700.gca transforms/talairach_with_skull.lta 
+
+aligning to atlas containing skull, setting unknown_nbr_spacing = 5
+
+== Number of threads available to mri_em_register for OpenMP = 1 == 
+reading 1 input volumes...
+logging results to talairach_with_skull.log
+reading '/usr/local/freesurfer/average/RB_all_withskull_2016-05-10.vc700.gca'...
+average std = 22.9   using min determinant for regularization = 52.6
+0 singular and 9002 ill-conditioned covariance matrices regularized
+reading 'nu.mgz'...
+freeing gibbs priors...done.
+accounting for voxel sizes in initial transform
+bounding unknown intensity as < 8.7 or > 569.1 
+total sample mean = 77.6 (1399 zeros)
+************************************************
+spacing=8, using 3243 sample points, tol=1.00e-05...
+************************************************
+register_mri: find_optimal_transform
+find_optimal_transform: nsamples 3243, passno 0, spacing 8
+resetting wm mean[0]: 100 --> 108
+resetting gm mean[0]: 61 --> 61
+input volume #1 is the most T1-like
+using real data threshold=9.0
+skull bounding box = (38, 53, 17) --> (219, 255, 255)
+using (98, 120, 136) as brain centroid...
+mean wm in atlas = 108, using box (76,95,107) --> (120, 144,165) to find MRI wm
+before smoothing, mri peak at 102
+robust fit to distribution - 102 +- 11.0
+distribution too broad for accurate scaling - disabling
+after smoothing, mri peak at 108, scaling input intensities by 1.000
+scaling channel 0 by 1
+initial log_p = -4.561
+************************************************
+First Search limited to translation only.
+************************************************
+max log p =    -4.463726 @ (-9.091, -9.091, -9.091)
+max log p =    -4.411334 @ (4.545, -4.545, -4.545)
+max log p =    -4.325716 @ (6.818, -2.273, 2.273)
+max log p =    -4.318741 @ (-1.136, 1.136, 1.136)
+max log p =    -4.299268 @ (-0.568, 0.568, 0.568)
+max log p =    -4.299268 @ (0.000, 0.000, 0.000)
+Found translation: (0.6, -14.2, -9.7): log p = -4.299
+****************************************
+Nine parameter search.  iteration 0 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.026, old_max_log_p =-4.299 (thresh=-4.3)
+ 0.98296   0.20086  -0.04061  -23.82756;
+-0.13912   1.06233   0.58855  -70.12680;
+ 0.13053  -0.53290   0.84865   68.19966;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 1 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.013, old_max_log_p =-4.026 (thresh=-4.0)
+ 1.05669   0.21593  -0.04366  -34.98028;
+-0.14334   1.03859   0.43728  -47.36590;
+ 0.10291  -0.36045   0.84935   46.10948;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 2 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-4.013, old_max_log_p =-4.013 (thresh=-4.0)
+ 1.05669   0.21593  -0.04366  -34.98028;
+-0.14334   1.03859   0.43728  -47.36590;
+ 0.10291  -0.36045   0.84935   46.10948;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.2500
+****************************************
+Nine parameter search.  iteration 3 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-3.914, old_max_log_p =-4.013 (thresh=-4.0)
+ 1.00151   0.17500  -0.05524  -18.65922;
+-0.10286   1.05790   0.50840  -62.25507;
+ 0.11416  -0.43563   0.83429   57.66455;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 4 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-3.914, old_max_log_p =-3.914 (thresh=-3.9)
+ 1.00151   0.17500  -0.05524  -18.65922;
+-0.10286   1.05790   0.50840  -62.25507;
+ 0.11416  -0.43563   0.83429   57.66455;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.0625
+****************************************
+Nine parameter search.  iteration 5 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-3.892, old_max_log_p =-3.914 (thresh=-3.9)
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 6 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-3.892, old_max_log_p =-3.892 (thresh=-3.9)
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+min search scale 0.025000 reached
+***********************************************
+Computing MAP estimate using 3243 samples...
+***********************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-05
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 3243
+Quasinewton: input matrix
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 009: -log(p) =   -0.0  tol 0.000010
+Resulting transform:
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+
+pass 1, spacing 8: log(p) = -3.892 (old=-4.561)
+transform before final EM align:
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+
+**************************************************
+ EM alignment process ...
+ Computing final MAP estimate using 364799 samples. 
+**************************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-07
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 364799
+Quasinewton: input matrix
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 011: -log(p) =    4.3  tol 0.000000
+final transform:
+ 1.00416   0.13823  -0.08925  -10.82822;
+-0.06497   1.07730   0.48572  -67.96201;
+ 0.12809  -0.40605   0.84450   50.34111;
+ 0.00000   0.00000   0.00000   1.00000;
+
+writing output transformation to transforms/talairach_with_skull.lta...
+mri_em_register utimesec    2957.109000
+mri_em_register stimesec    7.704510
+mri_em_register ru_maxrss   609824
+mri_em_register ru_ixrss    0
+mri_em_register ru_idrss    0
+mri_em_register ru_isrss    0
+mri_em_register ru_minflt   161388
+mri_em_register ru_majflt   0
+mri_em_register ru_nswap    0
+mri_em_register ru_inblock  0
+mri_em_register ru_oublock  24
+mri_em_register ru_msgsnd   0
+mri_em_register ru_msgrcv   0
+mri_em_register ru_nsignals 0
+mri_em_register ru_nvcsw    3
+mri_em_register ru_nivcsw   193047
+registration took 57 minutes and 29 seconds.
+
+ mri_watershed -rusage /usr/local/freesurfer/subjects/3123/touch/rusage.mri_watershed.dat -T1 -brain_atlas /usr/local/freesurfer/average/RB_all_withskull_2016-05-10.vc700.gca transforms/talairach_with_skull.lta T1.mgz brainmask.auto.mgz 
+
+
+Mode:          T1 normalized volume
+Mode:          Use the information of atlas (default parms, --help for details)
+
+*********************************************************
+The input file is T1.mgz
+The output file is brainmask.auto.mgz
+Weighting the input with atlas information before watershed
+
+*************************WATERSHED**************************
+Sorting...
+      first estimation of the COG coord: x=125 y=131 z=110 r=90
+      first estimation of the main basin volume: 3069800 voxels
+      Looking for seedpoints 
+        2 found in the cerebellum 
+        17 found in the rest of the brain 
+      global maximum in x=104, y=108, z=90, Imax=255
+      CSF=16, WM_intensity=110, WM_VARIANCE=5
+      WM_MIN=110, WM_HALF_MIN=110, WM_HALF_MAX=110, WM_MAX=110 
+      preflooding height equal to 10 percent
+done.
+Analyze...
+
+      main basin size=667072013 voxels, voxel volume =1.000 
+                     = 667072013 mmm3 = 667072.000 cm3
+done.
+PostAnalyze...Basin Prior
+ 1032 basins merged thanks to atlas 
+      ***** 0 basin(s) merged in 1 iteration(s)
+      ***** 0 voxel(s) added to the main basin
+done.
+Weighting the input with prior template 
+
+****************TEMPLATE DEFORMATION****************
+
+      second estimation of the COG coord: x=126,y=133, z=109, r=10466 iterations
+^^^^^^^^ couldn't find WM with original limits - expanding ^^^^^^
+
+   GLOBAL      CSF_MIN=1, CSF_intensity=2, CSF_MAX=43 , nb = 45064
+  RIGHT_CER    CSF_MIN=1, CSF_intensity=2, CSF_MAX=25 , nb = 1138409990
+  LEFT_CER     CSF_MIN=0, CSF_intensity=4, CSF_MAX=32 , nb = 1132244233
+ RIGHT_BRAIN   CSF_MIN=1, CSF_intensity=2, CSF_MAX=46 , nb = 1129131162
+ LEFT_BRAIN    CSF_MIN=1, CSF_intensity=2, CSF_MAX=46 , nb = 1074001840
+    OTHER      CSF_MIN=1, CSF_intensity=17, CSF_MAX=53 , nb = 1077295288
+   
+                     CSF_MAX  TRANSITION  GM_MIN  GM
+    GLOBAL     
+  before analyzing :    43,      44,        46,   67
+  after  analyzing :    43,      45,        46,   50
+   RIGHT_CER   
+  before analyzing :    25,      28,        33,   69
+  after  analyzing :    25,      31,        33,   40
+   LEFT_CER    
+  before analyzing :    32,      41,        49,   70
+  after  analyzing :    32,      46,        49,   52
+  RIGHT_BRAIN  
+  before analyzing :    46,      46,        46,   67
+  after  analyzing :    33,      46,        46,   51
+  LEFT_BRAIN   
+  before analyzing :    46,      45,        45,   66
+  after  analyzing :    34,      45,        45,   50
+     OTHER     
+  before analyzing :    53,      48,        46,   67
+  after  analyzing :    38,      48,        48,   52
+      mri_strip_skull: done peeling brain
+      highly tesselated surface with 10242 vertices
+      matching...79 iterations
+
+*********************VALIDATION*********************
+curvature mean = -0.012, std = 0.013
+curvature mean = 69.776, std = 9.162
+
+No Rigid alignment: -atlas Mode Off (basic atlas / no registration)
+      before rotation: sse = 7.09, sigma = 16.94
+      after  rotation: sse = 7.09, sigma = 16.94
+Localization of inacurate regions: Erosion-Dilation steps
+      the sse mean is 11.49, its var is 25.92   
+      before Erosion-Dilatation  9.73% of inacurate vertices
+      after  Erosion-Dilatation 16.22% of inacurate vertices
+      Validation of the shape of the surface done.
+Scaling of atlas fields onto current surface fields
+
+********FINAL ITERATIVE TEMPLATE DEFORMATION********
+Compute Local values csf/gray
+Fine Segmentation...48 iterations
+
+      mri_strip_skull: done peeling brain
+
+Brain Size = 1772596 voxels, voxel volume = 1.000 mm3
+           = 1772596 mmm3 = 1772.596 cm3
+
+
+******************************
+Saving brainmask.auto.mgz
+done
+mri_watershed utimesec    62.955398
+mri_watershed stimesec    1.990767
+mri_watershed ru_maxrss   847512
+mri_watershed ru_ixrss    0
+mri_watershed ru_idrss    0
+mri_watershed ru_isrss    0
+mri_watershed ru_minflt   217178
+mri_watershed ru_majflt   0
+mri_watershed ru_nswap    0
+mri_watershed ru_inblock  0
+mri_watershed ru_oublock  3192
+mri_watershed ru_msgsnd   0
+mri_watershed ru_msgrcv   0
+mri_watershed ru_nsignals 0
+mri_watershed ru_nvcsw    1
+mri_watershed ru_nivcsw   4470
+mri_watershed done
+
+ cp brainmask.auto.mgz brainmask.mgz 
+
+#-------------------------------------
+#@# EM Registration Sun Dec 31 03:20:11 UTC 2017
+/usr/local/freesurfer/subjects/3123/mri
+
+ mri_em_register -rusage /usr/local/freesurfer/subjects/3123/touch/rusage.mri_em_register.dat -uns 3 -mask brainmask.mgz nu.mgz /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.lta 
+
+setting unknown_nbr_spacing = 3
+using MR volume brainmask.mgz to mask input volume...
+
+== Number of threads available to mri_em_register for OpenMP = 1 == 
+reading 1 input volumes...
+logging results to talairach.log
+reading '/usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca'...
+average std = 7.3   using min determinant for regularization = 5.3
+0 singular and 841 ill-conditioned covariance matrices regularized
+reading 'nu.mgz'...
+freeing gibbs priors...done.
+accounting for voxel sizes in initial transform
+bounding unknown intensity as < 6.3 or > 503.7 
+total sample mean = 78.8 (1011 zeros)
+************************************************
+spacing=8, using 2830 sample points, tol=1.00e-05...
+************************************************
+register_mri: find_optimal_transform
+find_optimal_transform: nsamples 2830, passno 0, spacing 8
+resetting wm mean[0]: 98 --> 107
+resetting gm mean[0]: 61 --> 61
+input volume #1 is the most T1-like
+using real data threshold=15.1
+skull bounding box = (55, 70, 37) --> (197, 209, 190)
+using (102, 116, 114) as brain centroid...
+mean wm in atlas = 107, using box (85,99,95) --> (119, 133,132) to find MRI wm
+before smoothing, mri peak at 102
+robust fit to distribution - 102 +- 8.3
+after smoothing, mri peak at 102, scaling input intensities by 1.049
+scaling channel 0 by 1.04902
+initial log_p = -4.350
+************************************************
+First Search limited to translation only.
+************************************************
+max log p =    -4.298935 @ (-9.091, -9.091, -9.091)
+max log p =    -4.210759 @ (4.545, -4.545, 4.545)
+max log p =    -4.140431 @ (6.818, 2.273, -6.818)
+max log p =    -4.112698 @ (-3.409, 1.136, 1.136)
+max log p =    -4.111826 @ (0.568, -0.568, 0.568)
+max log p =    -4.104662 @ (0.284, -0.284, 0.284)
+Found translation: (-0.3, -11.1, -9.4): log p = -4.105
+****************************************
+Nine parameter search.  iteration 0 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-3.861, old_max_log_p =-4.105 (thresh=-4.1)
+ 0.97703   0.18133  -0.09114  -10.54165;
+-0.16135   1.01179   0.48244  -47.51421;
+ 0.20245  -0.45338   0.72125   63.52205;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 1 nscales = 0 ...
+****************************************
+Result so far: scale 1.000: max_log_p=-3.861, old_max_log_p =-3.861 (thresh=-3.9)
+ 0.97703   0.18133  -0.09114  -10.54165;
+-0.16135   1.01179   0.48244  -47.51421;
+ 0.20245  -0.45338   0.72125   63.52205;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.2500
+****************************************
+Nine parameter search.  iteration 2 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-3.744, old_max_log_p =-3.861 (thresh=-3.9)
+ 1.00988   0.10345  -0.10118  -5.11251;
+-0.08803   0.96500   0.48498  -50.73593;
+ 0.17879  -0.51048   0.73455   70.71864;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 3 nscales = 1 ...
+****************************************
+Result so far: scale 0.250: max_log_p=-3.744, old_max_log_p =-3.744 (thresh=-3.7)
+ 1.00988   0.10345  -0.10118  -5.11251;
+-0.08803   0.96500   0.48498  -50.73593;
+ 0.17879  -0.51048   0.73455   70.71864;
+ 0.00000   0.00000   0.00000   1.00000;
+reducing scale to 0.0625
+****************************************
+Nine parameter search.  iteration 4 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-3.707, old_max_log_p =-3.744 (thresh=-3.7)
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+****************************************
+Nine parameter search.  iteration 5 nscales = 2 ...
+****************************************
+Result so far: scale 0.062: max_log_p=-3.707, old_max_log_p =-3.707 (thresh=-3.7)
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+min search scale 0.025000 reached
+***********************************************
+Computing MAP estimate using 2830 samples...
+***********************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-05
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 2830
+Quasinewton: input matrix
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 008: -log(p) =   -0.0  tol 0.000010
+Resulting transform:
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+
+pass 1, spacing 8: log(p) = -3.707 (old=-4.350)
+transform before final EM align:
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+
+**************************************************
+ EM alignment process ...
+ Computing final MAP estimate using 315557 samples. 
+**************************************************
+dt = 5.00e-06, momentum=0.80, tol=1.00e-07
+l_intensity = 1.0000
+Aligning input volume to GCA...
+Transform matrix
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+nsamples 315557
+Quasinewton: input matrix
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+outof QuasiNewtonEMA: 010: -log(p) =    4.1  tol 0.000000
+final transform:
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+
+writing output transformation to transforms/talairach.lta...
+mri_em_register utimesec    2262.061322
+mri_em_register stimesec    7.341233
+mri_em_register ru_maxrss   598952
+mri_em_register ru_ixrss    0
+mri_em_register ru_idrss    0
+mri_em_register ru_isrss    0
+mri_em_register ru_minflt   158546
+mri_em_register ru_majflt   0
+mri_em_register ru_nswap    0
+mri_em_register ru_inblock  0
+mri_em_register ru_oublock  24
+mri_em_register ru_msgsnd   0
+mri_em_register ru_msgrcv   0
+mri_em_register ru_nsignals 0
+mri_em_register ru_nvcsw    0
+mri_em_register ru_nivcsw   152115
+registration took 44 minutes and 6 seconds.
+#--------------------------------------
+#@# CA Normalize Sun Dec 31 04:04:18 UTC 2017
+/usr/local/freesurfer/subjects/3123/mri
+
+ mri_ca_normalize -c ctrl_pts.mgz -mask brainmask.mgz nu.mgz /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.lta norm.mgz 
+
+writing control point volume to ctrl_pts.mgz
+using MR volume brainmask.mgz to mask input volume...
+reading 1 input volume
+reading atlas from '/usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca'...
+reading transform from 'transforms/talairach.lta'...
+reading input volume from nu.mgz...
+resetting wm mean[0]: 98 --> 107
+resetting gm mean[0]: 61 --> 61
+input volume #1 is the most T1-like
+using real data threshold=15.1
+skull bounding box = (55, 70, 37) --> (197, 209, 190)
+using (102, 116, 114) as brain centroid...
+mean wm in atlas = 107, using box (85,99,95) --> (119, 133,132) to find MRI wm
+before smoothing, mri peak at 102
+robust fit to distribution - 102 +- 8.3
+after smoothing, mri peak at 102, scaling input intensities by 1.049
+scaling channel 0 by 1.04902
+using 246344 sample points...
+INFO: compute sample coordinates transform
+ 1.01501   0.06346  -0.10497  -0.02904;
+-0.05491   0.96873   0.48237  -54.71299;
+ 0.16243  -0.51270   0.73696   72.84250;
+ 0.00000   0.00000   0.00000   1.00000;
+INFO: transform used
+finding control points in Left_Cerebral_White_Matter....
+found 39915 control points for structure...
+bounding box (117, 71, 26) --> (191, 195, 206)
+Left_Cerebral_White_Matter: limiting intensities to 107.0 --> 132.0
+5 of 11 (45.5%) samples deleted
+finding control points in Right_Cerebral_White_Matter....
+found 39557 control points for structure...
+bounding box (64, 69, 32) --> (135, 183, 207)
+Right_Cerebral_White_Matter: limiting intensities to 103.0 --> 132.0
+0 of 12 (0.0%) samples deleted
+finding control points in Left_Cerebellum_White_Matter....
+found 3059 control points for structure...
+bounding box (123, 162, 70) --> (172, 205, 131)
+finding control points in Right_Cerebellum_White_Matter....
+found 2705 control points for structure...
+bounding box (81, 159, 71) --> (124, 199, 134)
+finding control points in Brain_Stem....
+found 3518 control points for structure...
+bounding box (112, 142, 102) --> (145, 202, 143)
+Brain_Stem: limiting intensities to 106.0 --> 132.0
+4 of 9 (44.4%) samples deleted
+using 32 total control points for intensity normalization...
+bias field = 0.873 +- 0.110
+0 of 23 control points discarded
+finding control points in Left_Cerebral_White_Matter....
+found 39915 control points for structure...
+bounding box (117, 71, 26) --> (191, 195, 206)
+Left_Cerebral_White_Matter: limiting intensities to 88.0 --> 132.0
+2 of 75 (2.7%) samples deleted
+finding control points in Right_Cerebral_White_Matter....
+found 39557 control points for structure...
+bounding box (64, 69, 32) --> (135, 183, 207)
+Right_Cerebral_White_Matter: limiting intensities to 88.0 --> 132.0
+0 of 80 (0.0%) samples deleted
+finding control points in Left_Cerebellum_White_Matter....
+found 3059 control points for structure...
+bounding box (123, 162, 70) --> (172, 205, 131)
+Left_Cerebellum_White_Matter: limiting intensities to 100.0 --> 132.0
+6 of 9 (66.7%) samples deleted
+finding control points in Right_Cerebellum_White_Matter....
+found 2705 control points for structure...
+bounding box (81, 159, 71) --> (124, 199, 134)
+finding control points in Brain_Stem....
+found 3518 control points for structure...
+bounding box (112, 142, 102) --> (145, 202, 143)
+Brain_Stem: limiting intensities to 88.0 --> 132.0
+9 of 26 (34.6%) samples deleted
+using 190 total control points for intensity normalization...
+bias field = 1.029 +- 0.091
+0 of 173 control points discarded
+finding control points in Left_Cerebral_White_Matter....
+found 39915 control points for structure...
+bounding box (117, 71, 26) --> (191, 195, 206)
+Left_Cerebral_White_Matter: limiting intensities to 88.0 --> 132.0
+8 of 179 (4.5%) samples deleted
+finding control points in Right_Cerebral_White_Matter....
+found 39557 control points for structure...
+bounding box (64, 69, 32) --> (135, 183, 207)
+Right_Cerebral_White_Matter: limiting intensities to 88.0 --> 132.0
+13 of 208 (6.2%) samples deleted
+finding control points in Left_Cerebellum_White_Matter....
+found 3059 control points for structure...
+bounding box (123, 162, 70) --> (172, 205, 131)
+finding control points in Right_Cerebellum_White_Matter....
+found 2705 control points for structure...
+bounding box (81, 159, 71) --> (124, 199, 134)
+finding control points in Brain_Stem....
+found 3518 control points for structure...
+bounding box (112, 142, 102) --> (145, 202, 143)
+Brain_Stem: limiting intensities to 88.0 --> 132.0
+23 of 50 (46.0%) samples deleted
+using 437 total control points for intensity normalization...
+bias field = 1.019 +- 0.079
+2 of 393 control points discarded
+writing normalized volume to norm.mgz...
+writing control points to ctrl_pts.mgz
+freeing GCA...done.
+normalization took 4 minutes and 36 seconds.
+#--------------------------------------
+#@# CA Reg Sun Dec 31 04:08:54 UTC 2017
+/usr/local/freesurfer/subjects/3123/mri
+
+ mri_ca_register -rusage /usr/local/freesurfer/subjects/3123/touch/rusage.mri_ca_register.dat -nobigventricles -T transforms/talairach.lta -align-after -mask brainmask.mgz norm.mgz /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.m3z 
+
+not handling expanded ventricles...
+using previously computed transform transforms/talairach.lta
+renormalizing sequences with structure alignment, equivalent to:
+	-renormalize
+	-regularize_mean 0.500
+	-regularize 0.500
+using MR volume brainmask.mgz to mask input volume...
+
+== Number of threads available to mri_ca_register for OpenMP = 1 == 
+reading 1 input volumes...
+logging results to talairach.log
+reading input volume 'norm.mgz'...
+reading GCA '/usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca'...
+label assignment complete, 0 changed (0.00%)
+det(m_affine) = 1.00 (predicted orig area = 8.0)
+label assignment complete, 0 changed (0.00%)
+freeing gibbs priors...done.
+average std[0] = 5.0
+**************** pass 1 of 1 ************************
+enabling zero nodes
+setting smoothness coefficient to 0.039
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.988, neg=0, invalid=762
+0001: dt=274.801425, rms=0.874 (11.556%), neg=0, invalid=762
+0002: dt=387.546599, rms=0.840 (3.925%), neg=0, invalid=762
+0003: dt=295.936000, rms=0.827 (1.491%), neg=0, invalid=762
+0004: dt=295.936000, rms=0.818 (1.082%), neg=0, invalid=762
+0005: dt=295.936000, rms=0.811 (0.898%), neg=0, invalid=762
+0006: dt=129.472000, rms=0.807 (0.439%), neg=0, invalid=762
+0007: dt=2071.552000, rms=0.785 (2.769%), neg=0, invalid=762
+0008: dt=129.472000, rms=0.782 (0.418%), neg=0, invalid=762
+0009: dt=517.888000, rms=0.779 (0.371%), neg=0, invalid=762
+0010: dt=443.904000, rms=0.776 (0.323%), neg=0, invalid=762
+0011: dt=129.472000, rms=0.775 (0.124%), neg=0, invalid=762
+0012: dt=129.472000, rms=0.775 (0.049%), neg=0, invalid=762
+0013: dt=129.472000, rms=0.774 (0.089%), neg=0, invalid=762
+0014: dt=129.472000, rms=0.773 (0.161%), neg=0, invalid=762
+0015: dt=129.472000, rms=0.771 (0.211%), neg=0, invalid=762
+0016: dt=129.472000, rms=0.769 (0.240%), neg=0, invalid=762
+0017: dt=129.472000, rms=0.767 (0.245%), neg=0, invalid=762
+0018: dt=129.472000, rms=0.766 (0.233%), neg=0, invalid=762
+0019: dt=129.472000, rms=0.764 (0.236%), neg=0, invalid=762
+0020: dt=129.472000, rms=0.762 (0.242%), neg=0, invalid=762
+0021: dt=129.472000, rms=0.760 (0.246%), neg=0, invalid=762
+0022: dt=129.472000, rms=0.758 (0.259%), neg=0, invalid=762
+0023: dt=129.472000, rms=0.756 (0.228%), neg=0, invalid=762
+0024: dt=129.472000, rms=0.755 (0.212%), neg=0, invalid=762
+0025: dt=129.472000, rms=0.753 (0.186%), neg=0, invalid=762
+0026: dt=129.472000, rms=0.752 (0.197%), neg=0, invalid=762
+0027: dt=129.472000, rms=0.750 (0.208%), neg=0, invalid=762
+0028: dt=129.472000, rms=0.749 (0.213%), neg=0, invalid=762
+0029: dt=129.472000, rms=0.747 (0.194%), neg=0, invalid=762
+0030: dt=129.472000, rms=0.746 (0.186%), neg=0, invalid=762
+0031: dt=129.472000, rms=0.745 (0.173%), neg=0, invalid=762
+0032: dt=129.472000, rms=0.743 (0.157%), neg=0, invalid=762
+0033: dt=129.472000, rms=0.742 (0.153%), neg=0, invalid=762
+0034: dt=129.472000, rms=0.741 (0.152%), neg=0, invalid=762
+0035: dt=129.472000, rms=0.740 (0.157%), neg=0, invalid=762
+0036: dt=129.472000, rms=0.739 (0.135%), neg=0, invalid=762
+0037: dt=129.472000, rms=0.738 (0.123%), neg=0, invalid=762
+0038: dt=129.472000, rms=0.737 (0.128%), neg=0, invalid=762
+0039: dt=129.472000, rms=0.736 (0.112%), neg=0, invalid=762
+0040: dt=129.472000, rms=0.736 (0.119%), neg=0, invalid=762
+0041: dt=129.472000, rms=0.735 (0.115%), neg=0, invalid=762
+0042: dt=1183.744000, rms=0.735 (0.012%), neg=0, invalid=762
+0043: dt=1183.744000, rms=0.735 (-0.074%), neg=0, invalid=762
+blurring input image with Gaussian with sigma=0.500...
+0000: dt=0.000, rms=0.735, neg=0, invalid=762
+0044: dt=129.472000, rms=0.734 (0.089%), neg=0, invalid=762
+0045: dt=443.904000, rms=0.734 (0.073%), neg=0, invalid=762
+0046: dt=443.904000, rms=0.732 (0.180%), neg=0, invalid=762
+0047: dt=443.904000, rms=0.733 (-0.098%), neg=0, invalid=762
+0048: dt=0.000000, rms=0.733 (0.000%), neg=0, invalid=762
+setting smoothness coefficient to 0.154
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.741, neg=0, invalid=762
+0049: dt=262.649351, rms=0.731 (1.334%), neg=0, invalid=762
+0050: dt=155.874564, rms=0.718 (1.776%), neg=0, invalid=762
+0051: dt=68.747253, rms=0.715 (0.463%), neg=0, invalid=762
+0052: dt=580.608000, rms=0.706 (1.292%), neg=0, invalid=762
+0053: dt=68.289544, rms=0.698 (1.072%), neg=0, invalid=762
+0054: dt=145.152000, rms=0.696 (0.306%), neg=0, invalid=762
+0055: dt=75.574468, rms=0.695 (0.210%), neg=0, invalid=762
+0056: dt=75.574468, rms=0.694 (0.137%), neg=0, invalid=762
+0057: dt=75.574468, rms=0.692 (0.214%), neg=0, invalid=762
+0058: dt=75.574468, rms=0.690 (0.347%), neg=0, invalid=762
+0059: dt=75.574468, rms=0.687 (0.378%), neg=0, invalid=762
+0060: dt=75.574468, rms=0.684 (0.442%), neg=0, invalid=762
+0061: dt=75.574468, rms=0.681 (0.436%), neg=0, invalid=762
+0062: dt=75.574468, rms=0.678 (0.411%), neg=0, invalid=762
+0063: dt=75.574468, rms=0.676 (0.408%), neg=0, invalid=762
+0064: dt=75.574468, rms=0.673 (0.362%), neg=0, invalid=762
+0065: dt=75.574468, rms=0.671 (0.334%), neg=0, invalid=762
+0066: dt=75.574468, rms=0.669 (0.283%), neg=0, invalid=762
+0067: dt=75.574468, rms=0.667 (0.259%), neg=0, invalid=762
+0068: dt=75.574468, rms=0.666 (0.238%), neg=0, invalid=762
+0069: dt=75.574468, rms=0.664 (0.208%), neg=0, invalid=762
+0070: dt=75.574468, rms=0.663 (0.195%), neg=0, invalid=762
+0071: dt=75.574468, rms=0.662 (0.171%), neg=0, invalid=762
+0072: dt=75.574468, rms=0.661 (0.148%), neg=0, invalid=762
+0073: dt=75.574468, rms=0.660 (0.150%), neg=0, invalid=762
+0074: dt=75.574468, rms=0.659 (0.143%), neg=0, invalid=762
+0075: dt=75.574468, rms=0.658 (0.138%), neg=0, invalid=762
+0076: dt=75.574468, rms=0.657 (0.102%), neg=0, invalid=762
+0077: dt=75.574468, rms=0.657 (0.102%), neg=0, invalid=762
+0078: dt=75.574468, rms=0.656 (0.094%), neg=0, invalid=762
+0079: dt=36.288000, rms=0.656 (-0.001%), neg=0, invalid=762
+blurring input image with Gaussian with sigma=0.500...
+0000: dt=0.000, rms=0.657, neg=0, invalid=762
+0080: dt=82.944000, rms=0.655 (0.188%), neg=0, invalid=762
+0081: dt=36.288000, rms=0.655 (0.011%), neg=0, invalid=762
+0082: dt=36.288000, rms=0.655 (-0.002%), neg=0, invalid=762
+setting smoothness coefficient to 0.588
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.688, neg=0, invalid=762
+0083: dt=0.000000, rms=0.688 (0.094%), neg=0, invalid=762
+0084: dt=0.000000, rms=0.688 (0.000%), neg=0, invalid=762
+blurring input image with Gaussian with sigma=0.500...
+0000: dt=0.000, rms=0.688, neg=0, invalid=762
+0085: dt=0.000000, rms=0.688 (0.094%), neg=0, invalid=762
+0086: dt=0.000000, rms=0.688 (0.000%), neg=0, invalid=762
+setting smoothness coefficient to 2.000
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.784, neg=0, invalid=762
+0087: dt=5.116071, rms=0.761 (2.922%), neg=0, invalid=762
+0088: dt=2.018868, rms=0.761 (0.097%), neg=0, invalid=762
+0089: dt=2.018868, rms=0.761 (-0.043%), neg=0, invalid=762
+blurring input image with Gaussian with sigma=0.500...
+0000: dt=0.000, rms=0.761, neg=0, invalid=762
+0090: dt=0.000000, rms=0.761 (0.063%), neg=0, invalid=762
+0091: dt=0.000000, rms=0.761 (0.000%), neg=0, invalid=762
+setting smoothness coefficient to 5.000
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.863, neg=0, invalid=762
+0092: dt=1.792000, rms=0.854 (1.039%), neg=0, invalid=762
+0093: dt=1.792000, rms=0.848 (0.751%), neg=0, invalid=762
+0094: dt=0.448000, rms=0.847 (0.099%), neg=0, invalid=762
+0095: dt=0.448000, rms=0.847 (0.051%), neg=0, invalid=762
+0096: dt=0.448000, rms=0.846 (0.043%), neg=0, invalid=762
+0097: dt=0.448000, rms=0.846 (-0.022%), neg=0, invalid=762
+blurring input image with Gaussian with sigma=0.500...
+0000: dt=0.000, rms=0.847, neg=0, invalid=762
+0098: dt=1.536000, rms=0.845 (0.275%), neg=0, invalid=762
+0099: dt=0.256000, rms=0.844 (0.005%), neg=0, invalid=762
+0100: dt=0.256000, rms=0.844 (0.004%), neg=0, invalid=762
+0101: dt=0.256000, rms=0.844 (0.001%), neg=0, invalid=762
+0102: dt=0.256000, rms=0.844 (-0.005%), neg=0, invalid=762
+resetting metric properties...
+setting smoothness coefficient to 10.000
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.758, neg=0, invalid=762
+0103: dt=1.024000, rms=0.731 (3.557%), neg=0, invalid=762
+0104: dt=0.096000, rms=0.729 (0.195%), neg=0, invalid=762
+0105: dt=0.096000, rms=0.729 (-0.086%), neg=0, invalid=762
+blurring input image with Gaussian with sigma=0.500...
+0000: dt=0.000, rms=0.730, neg=0, invalid=762
+0106: dt=0.028000, rms=0.729 (0.102%), neg=0, invalid=762
+0107: dt=0.020000, rms=0.729 (0.007%), neg=0, invalid=762
+0108: dt=0.020000, rms=0.729 (-0.005%), neg=0, invalid=762
+renormalizing by structure alignment....
+renormalizing input #0
+gca peak = 0.10027 (20)
+mri peak = 0.08727 (18)
+Left_Lateral_Ventricle (4): linear fit = 0.81 x + 0.0 (1409 voxels, overlap=0.720)
+Left_Lateral_Ventricle (4): linear fit = 0.81 x + 0.0 (1409 voxels, peak = 16), gca=16.3
+gca peak = 0.15565 (16)
+mri peak = 0.09289 (22)
+Right_Lateral_Ventricle (43): linear fit = 1.03 x + 0.0 (1170 voxels, overlap=0.938)
+Right_Lateral_Ventricle (43): linear fit = 1.03 x + 0.0 (1170 voxels, peak = 17), gca=16.6
+gca peak = 0.26829 (96)
+mri peak = 0.07821 (95)
+Right_Pallidum (52): linear fit = 1.01 x + 0.0 (369 voxels, overlap=1.005)
+Right_Pallidum (52): linear fit = 1.01 x + 0.0 (369 voxels, peak = 97), gca=97.4
+gca peak = 0.20183 (93)
+mri peak = 0.08299 (98)
+Left_Pallidum (13): linear fit = 1.03 x + 0.0 (251 voxels, overlap=1.009)
+Left_Pallidum (13): linear fit = 1.03 x + 0.0 (251 voxels, peak = 96), gca=96.3
+gca peak = 0.21683 (55)
+mri peak = 0.07626 (63)
+Right_Hippocampus (53): linear fit = 1.13 x + 0.0 (341 voxels, overlap=0.506)
+Right_Hippocampus (53): linear fit = 1.13 x + 0.0 (341 voxels, peak = 62), gca=62.4
+gca peak = 0.30730 (58)
+mri peak = 0.09388 (68)
+Left_Hippocampus (17): linear fit = 1.12 x + 0.0 (291 voxels, overlap=0.282)
+Left_Hippocampus (17): linear fit = 1.12 x + 0.0 (291 voxels, peak = 65), gca=64.7
+gca peak = 0.11430 (101)
+mri peak = 0.07029 (104)
+Right_Cerebral_White_Matter (41): linear fit = 1.04 x + 0.0 (37093 voxels, overlap=0.809)
+Right_Cerebral_White_Matter (41): linear fit = 1.04 x + 0.0 (37093 voxels, peak = 106), gca=105.5
+gca peak = 0.12076 (102)
+mri peak = 0.07074 (104)
+Left_Cerebral_White_Matter (2): linear fit = 1.03 x + 0.0 (33802 voxels, overlap=0.828)
+Left_Cerebral_White_Matter (2): linear fit = 1.03 x + 0.0 (33802 voxels, peak = 106), gca=105.6
+gca peak = 0.14995 (59)
+mri peak = 0.03943 (68)
+Left_Cerebral_Cortex (3): linear fit = 1.17 x + 0.0 (7052 voxels, overlap=0.332)
+Left_Cerebral_Cortex (3): linear fit = 1.17 x + 0.0 (7052 voxels, peak = 69), gca=69.3
+gca peak = 0.15082 (58)
+mri peak = 0.04140 (71)
+Right_Cerebral_Cortex (42): linear fit = 1.18 x + 0.0 (8016 voxels, overlap=0.125)
+Right_Cerebral_Cortex (42): linear fit = 1.18 x + 0.0 (8016 voxels, peak = 69), gca=68.7
+gca peak = 0.14161 (67)
+mri peak = 0.03308 (67)
+Right_Caudate (50): linear fit = 1.30 x + 0.0 (341 voxels, overlap=0.650)
+Right_Caudate (50): linear fit = 1.30 x + 0.0 (341 voxels, peak = 87), gca=87.4
+gca peak = 0.15243 (71)
+mri peak = 0.08297 (77)
+Left_Caudate (11): linear fit = 1.03 x + 0.0 (248 voxels, overlap=0.987)
+Left_Caudate (11): linear fit = 1.03 x + 0.0 (248 voxels, peak = 73), gca=73.5
+gca peak = 0.13336 (57)
+mri peak = 0.04213 (65)
+Left_Cerebellum_Cortex (8): linear fit = 1.18 x + 0.0 (8254 voxels, overlap=0.086)
+Left_Cerebellum_Cortex (8): linear fit = 1.18 x + 0.0 (8254 voxels, peak = 68), gca=67.5
+gca peak = 0.13252 (56)
+mri peak = 0.04134 (71)
+Right_Cerebellum_Cortex (47): linear fit = 1.26 x + 0.0 (10715 voxels, overlap=0.004)
+Right_Cerebellum_Cortex (47): linear fit = 1.26 x + 0.0 (10715 voxels, peak = 71), gca=70.8
+gca peak = 0.18181 (84)
+mri peak = 0.05703 (90)
+Left_Cerebellum_White_Matter (7): linear fit = 1.12 x + 0.0 (3377 voxels, overlap=0.228)
+Left_Cerebellum_White_Matter (7): linear fit = 1.12 x + 0.0 (3377 voxels, peak = 94), gca=93.7
+gca peak = 0.20573 (83)
+mri peak = 0.05836 (88)
+Right_Cerebellum_White_Matter (46): linear fit = 1.05 x + 0.0 (3355 voxels, overlap=0.680)
+Right_Cerebellum_White_Matter (46): linear fit = 1.05 x + 0.0 (3355 voxels, peak = 88), gca=87.6
+gca peak = 0.21969 (57)
+mri peak = 0.06427 (61)
+Left_Amygdala (18): linear fit = 1.04 x + 0.0 (116 voxels, overlap=0.492)
+Left_Amygdala (18): linear fit = 1.04 x + 0.0 (116 voxels, peak = 60), gca=59.6
+gca peak = 0.39313 (56)
+mri peak = 0.10112 (59)
+Right_Amygdala (54): linear fit = 1.00 x + 0.0 (192 voxels, overlap=0.988)
+Right_Amygdala (54): linear fit = 1.00 x + 0.0 (192 voxels, peak = 56), gca=56.0
+gca peak = 0.14181 (85)
+mri peak = 0.06230 (88)
+Left_Thalamus_Proper (10): linear fit = 1.02 x + 0.0 (1970 voxels, overlap=0.924)
+Left_Thalamus_Proper (10): linear fit = 1.02 x + 0.0 (1970 voxels, peak = 87), gca=87.1
+gca peak = 0.11978 (83)
+mri peak = 0.07383 (82)
+Right_Thalamus_Proper (49): linear fit = 1.01 x + 0.0 (1968 voxels, overlap=0.928)
+Right_Thalamus_Proper (49): linear fit = 1.01 x + 0.0 (1968 voxels, peak = 84), gca=84.2
+gca peak = 0.13399 (79)
+mri peak = 0.06452 (83)
+Left_Putamen (12): linear fit = 1.07 x + 0.0 (838 voxels, overlap=0.749)
+Left_Putamen (12): linear fit = 1.07 x + 0.0 (838 voxels, peak = 84), gca=84.1
+gca peak = 0.14159 (79)
+mri peak = 0.05305 (78)
+Right_Putamen (51): linear fit = 1.04 x + 0.0 (1141 voxels, overlap=1.000)
+Right_Putamen (51): linear fit = 1.04 x + 0.0 (1141 voxels, peak = 83), gca=82.6
+gca peak = 0.10025 (80)
+mri peak = 0.08976 (84)
+Brain_Stem (16): linear fit = 1.10 x + 0.0 (3974 voxels, overlap=0.402)
+Brain_Stem (16): linear fit = 1.10 x + 0.0 (3974 voxels, peak = 88), gca=87.6
+gca peak = 0.13281 (86)
+mri peak = 0.11712 (95)
+Right_VentralDC (60): linear fit = 1.09 x + 0.0 (555 voxels, overlap=0.574)
+Right_VentralDC (60): linear fit = 1.09 x + 0.0 (555 voxels, peak = 93), gca=93.3
+gca peak = 0.12801 (89)
+mri peak = 0.07473 (92)
+Left_VentralDC (28): linear fit = 1.10 x + 0.0 (362 voxels, overlap=0.621)
+Left_VentralDC (28): linear fit = 1.10 x + 0.0 (362 voxels, peak = 97), gca=97.5
+gca peak = 0.20494 (23)
+mri peak = 0.11422 (24)
+gca peak = 0.15061 (21)
+mri peak = 0.12511 (18)
+Fourth_Ventricle (15): linear fit = 1.09 x + 0.0 (317 voxels, overlap=0.950)
+Fourth_Ventricle (15): linear fit = 1.09 x + 0.0 (317 voxels, peak = 23), gca=22.8
+gca peak Unknown = 0.94835 ( 0)
+gca peak Left_Inf_Lat_Vent = 0.18056 (32)
+gca peak Left_Thalamus = 0.64095 (94)
+gca peak Third_Ventricle = 0.20494 (23)
+gca peak CSF = 0.20999 (34)
+gca peak Left_Accumbens_area = 0.39030 (62)
+gca peak Left_undetermined = 0.95280 (25)
+gca peak Left_vessel = 0.67734 (53)
+gca peak Left_choroid_plexus = 0.09433 (44)
+gca peak Right_Inf_Lat_Vent = 0.23544 (26)
+gca peak Right_Accumbens_area = 0.30312 (64)
+gca peak Right_vessel = 0.46315 (51)
+gca peak Right_choroid_plexus = 0.14086 (44)
+gca peak Fifth_Ventricle = 0.51669 (36)
+gca peak WM_hypointensities = 0.09722 (76)
+gca peak non_WM_hypointensities = 0.11899 (47)
+gca peak Optic_Chiasm = 0.39033 (72)
+label assignment complete, 0 changed (0.00%)
+not using caudate to estimate GM means
+estimating mean gm scale to be 1.11 x + 0.0
+estimating mean wm scale to be 1.04 x + 0.0
+estimating mean csf scale to be 0.98 x + 0.0
+saving intensity scales to talairach.label_intensities.txt
+**************** pass 1 of 1 ************************
+enabling zero nodes
+setting smoothness coefficient to 0.008
+blurring input image with Gaussian with sigma=2.000...
+0000: dt=0.000, rms=0.754, neg=0, invalid=762
+0109: dt=64.292906, rms=0.747 (0.974%), neg=0, invalid=762
+0110: dt=55.488000, rms=0.746 (0.121%), neg=0, invalid=762
+0111: dt=110.976000, rms=0.745 (0.126%), neg=0, invalid=762
+0112: dt=369.920000, rms=0.741 (0.492%), neg=0, invalid=762
+0113: dt=517.888000, rms=0.732 (1.325%), neg=0, invalid=762
+Killed
+ERROR: mri_ca_register with non-zero status 137
+but continuing despite the error
+#--------------------------------------
+#@# SubCort Seg Sun Dec 31 06:37:55 UTC 2017
+
+ mri_ca_label -relabel_unlikely 9 .3 -prior 0.5 -align norm.mgz transforms/talairach.m3z /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca aseg.auto_noCCseg.mgz 
+
+sysname  Linux
+hostname ali-3
+machine  x86_64
+
+setenv SUBJECTS_DIR /usr/local/freesurfer/subjects
+cd /usr/local/freesurfer/subjects/3123/mri
+mri_ca_label -relabel_unlikely 9 .3 -prior 0.5 -align norm.mgz transforms/talairach.m3z /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca aseg.auto_noCCseg.mgz 
+
+
+== Number of threads available to mri_ca_label for OpenMP = 1 == 
+relabeling unlikely voxels with window_size = 9 and prior threshold 0.30
+using Gibbs prior factor = 0.500
+renormalizing sequences with structure alignment, equivalent to:
+	-renormalize
+	-renormalize_mean 0.500
+	-regularize 0.500
+reading 1 input volumes
+reading classifier array from /usr/local/freesurfer/average/RB_all_2016-05-10.vc700.gca
+reading input volume from norm.mgz
+transforms/talairach.m3z: could not open transform
+average std[0] = 7.3
+reading transform from transforms/talairach.m3z
+ERROR: cannot find or read transforms/talairach.m3z
+No such file or directory
+Linux ali-3 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+recon-all -s 3123 exited with ERRORS at Sun Dec 31 06:39:33 UTC 2017
+
+To report a problem, see http://surfer.nmr.mgh.harvard.edu/fswiki/BugReporting
