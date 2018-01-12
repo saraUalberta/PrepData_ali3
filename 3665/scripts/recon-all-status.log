@@ -1,0 +1,13 @@
+status file for recon-all
+Thu Jan 11 00:48:43 UTC 2018
+#@# MotionCor Thu Jan 11 00:48:47 UTC 2018
+#@# Talairach Thu Jan 11 00:49:02 UTC 2018
+#@# Talairach Failure Detection Thu Jan 11 00:52:49 UTC 2018
+#@# Nu Intensity Correction Thu Jan 11 00:52:50 UTC 2018
+Linux ali-3 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+tee: /usr/local/freesurfer/subjects/3665/scripts/recon-all.log: No space left on device
+recon-all -s 3665 exited with ERRORS at Thu Jan 11 00:53:14 UTC 2018
+tee: /usr/local/freesurfer/subjects/3665/scripts/recon-all.log: No space left on device
+
+tee: /usr/local/freesurfer/subjects/3665/scripts/recon-all.log: No space left on device
