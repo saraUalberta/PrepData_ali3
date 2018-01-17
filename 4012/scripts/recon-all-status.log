@@ -1,0 +1,16 @@
+status file for recon-all
+Mon Jan 15 18:07:14 UTC 2018
+#@# MotionCor Mon Jan 15 18:07:20 UTC 2018
+#@# Talairach Mon Jan 15 18:07:40 UTC 2018
+#@# Talairach Failure Detection Mon Jan 15 18:11:22 UTC 2018
+#@# Nu Intensity Correction Mon Jan 15 18:11:23 UTC 2018
+#@# Intensity Normalization Mon Jan 15 18:16:54 UTC 2018
+#@# Skull Stripping Mon Jan 15 18:23:17 UTC 2018
+#@# EM Registration Mon Jan 15 19:21:57 UTC 2018
+#@# CA Normalize Mon Jan 15 20:16:55 UTC 2018
+#@# CA Reg Mon Jan 15 20:21:57 UTC 2018
+#@# SubCort Seg Tue Jan 16 03:30:00 UTC 2018
+Linux ali-3 3.13.0-121-generic #170-Ubuntu SMP Wed Jun 14 09:04:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+recon-all -s 4012 exited with ERRORS at Tue Jan 16 05:02:14 UTC 2018
+
